@@ -49,22 +49,22 @@ p->height=NodeHeight(p);
 
 if(BalanceFactor(p)==2 && BalanceFactor(p->left)==1)
 {
-    printf("Tree is Imbananced\n");
+    printf("\n\nTree is Imbananced\n");
     printf("LL Rotation is needed");
 }
 else if(BalanceFactor(p)==2 && BalanceFactor(p->left)==-1)
 {
-    printf("Tree is Imbananced\n");
+    printf("\n\nTree is Imbananced\n");
     printf("LR Rotation is needed");
 }
 else if(BalanceFactor(p)==-2 && BalanceFactor(p->right)==-1)
 {
-    printf("Tree is Imbananced\n");
+    printf("\n\nTree is Imbananced\n");
     printf("RR Rotation is needed");
 }
 else if(BalanceFactor(p)==-2 && BalanceFactor(p->right)==1)
 {
-    printf("Tree is Imbananced\n");
+    printf("\n\nTree is Imbananced\n");
     printf("LL Rotation is needed");
 }
 return p;
