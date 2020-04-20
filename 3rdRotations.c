@@ -62,9 +62,18 @@ return plr;
 
 struct Node *RRRotation(struct Node *p)
 {
-return NULL;
+struct Node *pr=p->right;
+struct Node *prl=pr->left;
+pr->left=p;
+p->right=pr->left;
+p->height=NodeHeight(p);
+pr->height=NodeHeight(pr);
+if(root==p)
+root=pr;
+return pr;
 }
-struct Node *RLRotation(struct Node *p)
+
+struct Node *RLRotation(struct Node *p) //Update Soon
 {
 return NULL;
 }
