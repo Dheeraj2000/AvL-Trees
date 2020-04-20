@@ -74,8 +74,11 @@ return p;
 int main()
 {
 
-root=RInsert(root,50);
-RInsert(root,10);
-RInsert(root,20);
+root=RInsert(root,1);
+RInsert(root,2);
+RInsert(root,3);
+RInsert(root,4);
+RInsert(root,5);
+RInsert(root,6);
 return 0;
 }
